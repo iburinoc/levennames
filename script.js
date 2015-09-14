@@ -70,7 +70,7 @@ function getResults() {
 	console.log('results: ' + top10);
 
 	for(var i = 1; i <= 10; i++) {
-		$('#res' + i).html(top10[i-1][0]);
+		$('#res' + i).html(capitalizeName(top10[i-1][0]));
 		$('#sc' + i + '1').html(sc1[top10[i-1][0]]);
 		$('#sc' + i + '2').html(sc2[top10[i-1][0]]);
 	}
