@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<script src="/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>LevenNames</h1>
+			<h3>Find names of minimal Levenshtein distance from two other names</h3><br/>
+			<div>
+				<div class="form-group" style="float: left; width: 48%;">
+					<label for="name1">First Name</label>
+					<input type="text" class="form-control" id="name1">
+				</div>
+				<div class="form-group" style="float: right; width: 48%;">
+					<label for="name2">Second Name</label>
+					<input type="text" class="form-control" id="name2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Name set</label>
+				<label class="checkbox-inline"><input type="radio" name="namelist" value="male"> Male names</label>
+				<label class="checkbox-inline"><input type="radio" name="namelist" value="female"> Female names</label>
+				<label class="checkbox-inline"><input type="radio" name="namelist" value="both" checked> Both</label>
+			</div>
+			<button class="btn btn-default">Go!</button>
+			<table class="table table-hover" id="results" hidden>
+				<thead>
+					<th>#</th>
+					<th>Name</th>
+					<th>1st distance</th>
+					<th>2nd distance</th>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td id="res1"></td>
+					<td id="sc11"></td>
+					<td id="sc12"></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td id="res2"></td>
+					<td id="sc21"></td>
+					<td id="sc22"></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td id="res3"></td>
+					<td id="sc31"></td>
+					<td id="sc32"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td id="res4"></td>
+					<td id="sc41"></td>
+					<td id="sc42"></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td id="res5"></td>
+					<td id="sc51"></td>
+					<td id="sc52"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td id="res6"></td>
+					<td id="sc61"></td>
+					<td id="sc62"></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td id="res7"></td>
+					<td id="sc71"></td>
+					<td id="sc72"></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td id="res8"></td>
+					<td id="sc81"></td>
+					<td id="sc82"></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td id="res9"></td>
+					<td id="sc91"></td>
+					<td id="sc92"></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td id="res10"></td>
+					<td id="sc101"></td>
+					<td id="sc102"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
